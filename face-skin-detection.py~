@@ -72,8 +72,8 @@ def main():
 			skin = detect_skin(face_roi, width)
 
 		# Display the resulting frame
-		both = np.hstack((face_roi,skin))
-		cv2.imshow('Result',both)
+		cv2.imshow('face_roi',face_roi)
+		cv2.imshow('skin',skin)
 
 		if cv2.waitKey(1) & 0xFF == ord('q'):
 			break
